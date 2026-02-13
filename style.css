@@ -158,5 +158,45 @@ button {
   from { opacity: 0; transform: scale(0.8); }
   to { opacity: 1; transform: scale(1); }
 }
+/* Animated romantic background */
+.yes-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    -45deg,
+    #ff758c,
+    #ff7eb3,
+    #ff9a9e,
+    #fad0c4
+  );
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 25px;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.yes-page h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.yes-page p {
+  font-size: 1.1rem;
+  max-width: 320px;
+  line-height: 1.5;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
 
 
