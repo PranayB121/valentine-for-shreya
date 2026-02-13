@@ -31,7 +31,8 @@ yesBtn.addEventListener("click", () => {
  // Unmute music after user interaction
  const iframe = document.getElementById("bgMusic");
  if (iframe && iframe.src.includes("mute=1")) {
-   iframe.src = iframe.src.replace("&mute=1", "");
+  iframe.src =
+ "https://www.youtube.com/embed/VYtSJFV46Tk?autoplay=1&loop=1&playlist=VYtSJFV46Tk";
  }
  confettiBlast();
  setTimeout(() => {
