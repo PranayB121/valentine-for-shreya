@@ -39,25 +39,29 @@ yesBtn.addEventListener("click", () => {
   const iframe = document.getElementById("bgMusic");
   if (iframe) {
     iframe.src =
-      "https://www.youtube.com/embed/VYtSJFV46Tk?autoplay=1&loop=1&playlist=VYtSJFV46Tk";
+      "https://youtu.be/VYtSJFV46Tk?si=d9hkogrHkb-Y0XDj";
   }
 
   confettiBlast();
 
   setTimeout(() => {
-    document.body.innerHTML = `
-      <div class="yes-page">
-        <h1>My Valentine 💖</h1>
+  document.body.innerHTML = `
+    <div class="yes-page">
+      <h1>My Valentine 💖</h1>
 
-        <img src="shreya.jpg" class="valentine-img" />
+      <div class="flower-row">🌸 🌹 💐 🌷 🌺</div>
 
-        <p>
-          This smile is my favorite place to be 🥰<br />
-          Happy Valentine’s Day, Shreya 🌸
-        </p>
-      </div>
-    `;
-  }, 1200);
+      <img src="shreya.jpg" class="valentine-img" />
+
+      <p>
+        This smile is my favorite place to be 🥰<br>
+        Happy Valentine’s Day, Shreya 💕
+      </p>
+
+      <div class="flower-row">💖 💕 💖 💕</div>
+    </div>
+  `;
+}, 1200);
 });
 
 /* Floating hearts */
